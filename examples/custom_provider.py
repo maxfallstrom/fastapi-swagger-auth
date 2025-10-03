@@ -1,9 +1,10 @@
 """Custom provider implementation example."""
 
-from typing import Dict, Any
-from fastapi import FastAPI, Depends
+from typing import Any, Dict
+
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from fastapi_swagger_auth import SwaggerAuthDev
 from fastapi_swagger_auth.providers.base import AuthProvider

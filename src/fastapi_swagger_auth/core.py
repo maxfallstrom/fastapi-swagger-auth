@@ -1,14 +1,15 @@
 """Core SwaggerAuthDev class for FastAPI integration."""
 
 import logging
-from typing import Optional, Callable, Dict, Any
+from typing import Any, Callable, Dict, Optional
+
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from jose import jwt
 
 from fastapi_swagger_auth.config import SwaggerAuthConfig
-from fastapi_swagger_auth.swagger_ui import create_swagger_ui_html
 from fastapi_swagger_auth.providers.base import AuthProvider
+from fastapi_swagger_auth.swagger_ui import create_swagger_ui_html
 
 logger = logging.getLogger(__name__)
 

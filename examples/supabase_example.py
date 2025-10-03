@@ -1,9 +1,10 @@
 """Supabase authentication example."""
 
 import os
-from fastapi import FastAPI, Depends
+
+from fastapi import Depends, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 from fastapi_swagger_auth import SwaggerAuthDev
 

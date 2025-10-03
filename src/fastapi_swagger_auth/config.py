@@ -1,7 +1,7 @@
 """Configuration and settings for FastAPI Swagger Auth."""
 
-from typing import Optional
 from dataclasses import dataclass
+from typing import Optional
 
 
 @dataclass

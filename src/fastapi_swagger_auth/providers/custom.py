@@ -1,7 +1,8 @@
 """Custom JWT provider for simple token generation."""
 
 import time
-from typing import Dict, Any
+from typing import Any, Dict
+
 from jose import jwt
 
 from fastapi_swagger_auth.providers.base import AuthProvider

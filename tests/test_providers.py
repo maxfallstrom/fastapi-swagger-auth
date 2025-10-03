@@ -1,7 +1,8 @@
 """Tests for authentication providers."""
 
-import pytest
 import time
+
+import pytest
 from jose import jwt
 
 from fastapi_swagger_auth.providers.custom import CustomJWTProvider

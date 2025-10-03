@@ -75,9 +75,9 @@ def create_swagger_ui_html(
                 onComplete: function() {{
                     // Auto-authorize the Swagger UI with the token
                     ui.preauthorizeApiKey('HTTPBearer', '{token}');
-                    console.log('[FastAPI-Swagger-Auth] Swagger UI initialized with auto-auth');
-                    console.log('[FastAPI-Swagger-Auth] Development mode - authentication automated');
-                    console.log('[FastAPI-Swagger-Auth] Token auto-populated in authorization dialog');
+                    console.log('[FastAPI-Swagger-Auth] Swagger UI initialized');
+                    console.log('[FastAPI-Swagger-Auth] Development mode active');
+                    console.log('[FastAPI-Swagger-Auth] Token auto-populated');
                     {refresh_script}
                 }}
             }});

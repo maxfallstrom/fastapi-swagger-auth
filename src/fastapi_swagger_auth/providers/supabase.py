@@ -1,7 +1,8 @@
 """Supabase authentication provider."""
 
 import os
-from typing import Dict, Any, Optional
+from typing import Any, Dict, Optional
+
 import httpx
 from jose import jwt
 
